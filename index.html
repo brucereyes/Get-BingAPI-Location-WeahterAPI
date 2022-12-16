@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Web Application</title>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <h1>Welcome To The Travel Guide</h1>
+        <form onsubmit="return false">
+            <input type="text" id="input" placeholder="Enter a location anywhere in world" autocomplete="off" />
+            <button onclick="searchLocation()">Search</button>
+        </form>
+    </div>
+    <div id="container" class="none">
+        <h1>Results:</h1>
+        <div>
+            <h2>Place Details:</h2>
+            <div id="subContainer">
+                <p>Place: <span id="name"></span></p>
+                <p>State: <span id="state"></span></p>
+                <p>District: <span id="district"></span></p>
+                <p>Country: <span id="country"></span></p>
+                <p>Latitude: <span id="lat"></span></p>
+                <p>Longitude: <span id="long"></span></p>
+                <p>Temperature: <span id="temp"></span></p>
+                <p>Feels_like: <span id="feels"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Pressure: <span id="pressure"></span></p>
+                <p>Description: <span id="description"></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>
